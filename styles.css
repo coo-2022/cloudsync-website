@@ -286,4 +286,37 @@ footer {
         margin-top: 2rem;
         max-width: 100%;
     }
+}
+
+.download-progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 2px;
+    margin-top: 1rem;
+    display: none;
+}
+
+.download-progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    transition: width 0.3s;
+}
+
+.downloading .download-progress-container {
+    display: block;
+}
+
+.version {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.file-size {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
 } 

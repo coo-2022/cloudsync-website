@@ -166,22 +166,41 @@
                         <img src="windows-icon.svg" alt="Windows">
                     </div>
                     <h3>Windows</h3>
-                    <a href="#" class="download-btn">Download EXE</a>
+                    <p class="version">Version 1.0.0</p>
+                    <p class="file-size">85.2 MB</p>
+                    <a href="https://github.com/YOUR_USERNAME/REPO_NAME/releases/download/v1.0.0/CloudSync-Setup-1.0.0.exe" 
+                       class="download-btn" 
+                       onclick="checkBeforeDownload('windows') && downloadFile(this.href, 'CloudSync-Setup-1.0.0.exe')">
+                        Download EXE
+                    </a>
                 </div>
                 <div class="download-card">
                     <div class="platform-icon">
                         <img src="mac-icon.svg" alt="macOS">
                     </div>
                     <h3>macOS</h3>
-                    <a href="#" class="download-btn">Download DMG</a>
+                    <a href="https://github.com/YOUR_USERNAME/REPO_NAME/releases/download/v1.0.0/CloudSync.dmg" 
+                       class="download-btn" 
+                       data-i18n="download.mac">
+                        Download DMG
+                    </a>
                 </div>
                 <div class="download-card">
                     <div class="platform-icon">
                         <img src="linux-icon.svg" alt="Linux">
                     </div>
                     <h3>Linux</h3>
-                    <a href="#" class="download-btn">Download AppImage</a>
+                    <a href="https://github.com/YOUR_USERNAME/REPO_NAME/releases/download/v1.0.0/CloudSync.AppImage" 
+                       class="download-btn" 
+                       data-i18n="download.linux">
+                        Download AppImage
+                    </a>
                 </div>
+            </div>
+
+            <!-- 添加下载进度条 -->
+            <div class="download-progress-container">
+                <div id="download-progress" class="download-progress"></div>
             </div>
         </section>
     </main>
@@ -197,5 +216,14 @@
     </footer>
 
     <script src="i18n.js"></script>
+    <script>
+    function trackDownload(platform) {
+        // 记录下载次数
+        fetch('/api/track-download', {
+            method: 'POST',
+            body: JSON.stringify({ platform })
+        });
+    }
+    </script>
 </body>
 </html> 
