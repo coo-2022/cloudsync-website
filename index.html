@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync - 智能云存储</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="智能云存储解决方案，让文件管理更轻松">
+    <meta name="keywords" content="云存储,文件同步,云盘,文件管理">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- 社交媒体标签 -->
+    <meta property="og:title" content="CloudSync - 智能云存储">
+    <meta property="og:description" content="智能云存储解决方案，让文件管理更轻松">
+    <meta property="og:image" content="https://你的域名/og-image.jpg">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">CloudSync</div>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav.features">功能</a>
+                <a href="#why-us" data-i18n="nav.why-us">优势</a>
+                <a href="#download" data-i18n="nav.download">下载</a>
+            </div>
+            <div class="language-switch">
+                <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+                <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">智能云存储新时代</h1>
+                <p class="hero-subtitle" data-i18n="hero.description">
+                    基于人工智能的新一代云存储解决方案<br>
+                    让文件管理更智能、更高效
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="primary-btn" data-i18n="hero.cta">立即体验</a>
+                    <a href="#features" class="secondary-btn" data-i18n="hero.learn-more">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 主背景 -->
+                    <rect width="500" height="400" rx="12" fill="rgba(30, 41, 59, 0.5)"/>
+                    
+                    <!-- 顶部工具栏 -->
+                    <rect x="0" y="0" width="500" height="48" rx="12" fill="rgba(99, 102, 241, 0.2)"/>
+                    <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
+                    <circle cx="44" cy="24" r="6" fill="#febc2e"/>
+                    <circle cx="64" cy="24" r="6" fill="#28c840"/>
+                    
+                    <!-- 搜索栏 -->
+                    <rect x="200" y="12" width="200" height="24" rx="12" fill="rgba(255, 255, 255, 0.1)"/>
+                    <text x="220" y="28" fill="#94a3b8" font-size="12">搜索文件...</text>
+                    
+                    <!-- 侧边栏 -->
+                    <rect x="0" y="48" width="120" height="352" fill="rgba(99, 102, 241, 0.1)"/>
+                    
+                    <!-- 侧边栏菜单 -->
+                    <g fill="#94a3b8">
+                        <text x="20" y="80" font-size="14">我的文件</text>
+                        <text x="20" y="120" font-size="14">最近文件</text>
+                        <text x="20" y="160" font-size="14">已共享</text>
+                        <text x="20" y="200" font-size="14">回收站</text>
+                    </g>
+                    
+                    <!-- 主内容区 -->
+                    <g transform="translate(140, 60)">
+                        <!-- 文件列表标题 -->
+                        <text x="0" y="20" fill="#f8fafc" font-size="16" font-weight="bold">最近上传</text>
+                        
+                        <!-- 文件列表项 -->
+                        <g transform="translate(0, 40)">
+                            <!-- 文件1 -->
+                            <rect width="340" height="60" rx="8" fill="rgba(99, 102, 241, 0.1)"/>
+                            <text x="60" y="25" fill="#f8fafc" font-size="14">项目方案.pdf</text>
+                            <text x="60" y="45" fill="#94a3b8" font-size="12">2.5 MB • 刚刚</text>
+                            <rect x="240" y="20" width="80" height="4" rx="2" fill="#6366f1"/>
+                            <text x="240" y="35" fill="#94a3b8" font-size="10">上传中 75%</text>
+                        </g>
+                        
+                        <!-- 文件2 -->
+                        <g transform="translate(0, 110)">
+                            <rect width="340" height="60" rx="8" fill="rgba(99, 102, 241, 0.1)"/>
+                            <text x="60" y="25" fill="#f8fafc" font-size="14">设计稿.fig</text>
+                            <text x="60" y="45" fill="#94a3b8" font-size="12">15 MB • 2分钟前</text>
+                            <text x="240" y="35" fill="#94a3b8" font-size="12">已完成</text>
+                        </g>
+                        
+                        <!-- 文件3 -->
+                        <g transform="translate(0, 180)">
+                            <rect width="340" height="60" rx="8" fill="rgba(99, 102, 241, 0.1)"/>
+                            <text x="60" y="25" fill="#f8fafc" font-size="14">会议记录.docx</text>
+                            <text x="60" y="45" fill="#94a3b8" font-size="12">1.2 MB • 5分钟前</text>
+                            <text x="240" y="35" fill="#94a3b8" font-size="12">已完成</text>
+                        </g>
+                        
+                        <!-- 文件4 -->
+                        <g transform="translate(0, 250)">
+                            <rect width="340" height="60" rx="8" fill="rgba(99, 102, 241, 0.1)"/>
+                            <text x="60" y="25" fill="#f8fafc" font-size="14">数据分析.xlsx</text>
+                            <text x="60" y="45" fill="#94a3b8" font-size="12">3.8 MB • 10分钟前</text>
+                            <text x="240" y="35" fill="#94a3b8" font-size="12">已完成</text>
+                        </g>
+                    </g>
+                    
+                    <!-- 文件图标 -->
+                    <g fill="#6366f1">
+                        <!-- PDF图标 -->
+                        <rect x="150" y="90" width="40" height="40" rx="8"/>
+                        <text x="158" y="115" fill="white" font-size="12">PDF</text>
+                        
+                        <!-- FIG图标 -->
+                        <rect x="150" y="160" width="40" height="40" rx="8"/>
+                        <text x="158" y="185" fill="white" font-size="12">FIG</text>
+                        
+                        <!-- DOC图标 -->
+                        <rect x="150" y="230" width="40" height="40" rx="8"/>
+                        <text x="158" y="255" fill="white" font-size="12">DOC</text>
+                        
+                        <!-- XLS图标 -->
+                        <rect x="150" y="300" width="40" height="40" rx="8"/>
+                        <text x="158" y="325" fill="white" font-size="12">XLS</text>
+                    </g>
+                    
+                    <!-- 悬浮效果 -->
+                    <rect x="140" y="100" width="340" height="60" rx="8" fill="rgba(99, 102, 241, 0.05)" style="opacity: 0.5"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title" data-i18n="features.title">核心特性</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 data-i18n="features.ai.title">AI 智能分类</h3>
+                    <p data-i18n="features.ai.desc">自动识别文件类型，智能分类整理，让文件管理更轻松</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="features.security.title">安全加密</h3>
+                    <p data-i18n="features.security.desc">军事级加密技术，保护您的数据安全</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-i18n="features.speed.title">极速传输</h3>
+                    <p data-i18n="features.speed.desc">智能分片上传，多线程并发，传输速度提升300%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <h2 class="section-title" data-i18n="download.title">立即下载</h2>
+            <div class="download-options">
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <img src="windows-icon.svg" alt="Windows">
+                    </div>
+                    <h3>Windows</h3>
+                    <a href="#" class="download-btn">Download EXE</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <img src="mac-icon.svg" alt="macOS">
+                    </div>
+                    <h3>macOS</h3>
+                    <a href="#" class="download-btn">Download DMG</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <img src="linux-icon.svg" alt="Linux">
+                    </div>
+                    <h3>Linux</h3>
+                    <a href="#" class="download-btn">Download AppImage</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 CloudSync. <span data-i18n="footer.rights">保留所有权利</span></p>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.privacy">隐私政策</a>
+                <a href="#" data-i18n="footer.terms">服务条款</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+</body>
+</html> 
